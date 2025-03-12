@@ -1,0 +1,200 @@
+#game-title{
+    margin: 5% auto;
+    color: white;
+}
+body{
+    background: #003f87;
+}
+#finalrules{
+    display: none;
+    position: absolute;
+    background: #007ac8;
+    border: 2px solid white;
+    color: white;
+    height: 400px;
+    width: 80%;
+    left: 10%;
+    margin-top: 10px;
+}
+#gameMode{
+    margin-top: 10px;
+    display: none;
+    position: absolute;
+    background: #007ac8;
+    border: 2px solid white;
+    color: white;
+    height: 400px;
+    width: 80%;
+    left: 10%;
+}
+.front-page-button{
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: #007ac8;
+    transition-duration: 0.4s;
+    color: white;
+}
+.front-page-button:hover{
+    background-color: aliceblue;
+    color: #003f87;
+    cursor: pointer;
+}
+#QRcode {
+    display: none;
+    width: 60%;
+    height: 400px;
+    margin: 10px auto 0 auto;
+    background: #007ac8;
+    border: 2px solid white;
+    color: white;
+    position: absolute;
+    left: 20%;
+    background-image: url(adobe-express-qr-code.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+#QRcode h2{
+    margin: 10% auto;
+}
+#Username{
+    margin: 10% auto 5% auto;
+}
+#startButton{
+    width: 20%;
+    margin: 0 auto;
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: #007ac8;
+    transition-duration: 0.4s;
+    color: white;
+}
+#placeholder{
+    height: 10px;
+}
+#discuss{
+    display: block;
+    position: absolute;
+    background: #006b3f;
+    border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+    height: 400px;
+    width: 80%;
+    left: 10%;
+    top: 25%;
+}
+#discuss2{
+    display: block;
+    position: absolute;
+    background: #cc2d30;
+    border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+    height: 400px;
+    width: 80%;
+    left: 10%;
+    top: 25%;
+}
+#innocentClose{
+    width: 20%;
+    margin: 0 auto;
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: #667986;
+    transition-duration: 0.4s;
+    color: white;
+}
+#doneButton, #nextButton{
+    width: 20%;
+    margin: 0 auto;
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: #007ac8;
+    transition-duration: 0.4s;
+    color: white;
+    display: none;
+}
+#holder{
+    width: 90%;
+    height: 80%;
+    margin: 10% auto;
+}
+
+#questionbox, #questionbox2, #questionbox3{
+    width: 70%;
+    height: 400px;
+    margin: 5% auto;
+    background-color: #007ac8;
+    color: white;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+#questionbox2, #questionbox3{
+    display: none;
+}
+
+#firstOne, #secondOne, #thirdOne{
+    margin: 50px auto;
+}
+#areaButton, #areaButton2, #areaButton3{
+    width: 80%;
+    margin: 5% auto;
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: #003f87;
+    color: white;
+}
+#areaButton:focus, #areaButton2:focus, #areaButton3:focus{
+    background-color: white;
+    color: #003f87;
+    border-color: #003f87;
+    transition: 0.4s;
+}
+img{
+    max-height: 200px;
+}
+#goodluck{
+    margin: 5% auto;
+    background-color: #007ac8;
+    color: white;
+    width: 70%;
+    border: 2px solid white;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#prompt1, #prompt2, #prompt3{
+    margin: 5% auto;
+    background-color: #007ac8;
+    color: white;
+    width: 70%;
+    border: 2px solid white;
+    border-radius: 25px;
+    display: none;
+}
+#prompt1{
+    display: block;
+}
+
+#hider, #hider2, #hider3{
+    display: none;
+    width: 100%;
+}
+#imposterPlaceholder1, #imposterPlaceholder2, #imposterPlaceholder3{
+    margin: 5% auto;
+    background-color: #007ac8;
+    color: white;
+    width: 70%;
+    height: 100%;
+    border: 2px solid white;
+    border-radius: 25px;
+    display: none;
+}
+#imposterPlaceholder1{
+    display: block;
+}

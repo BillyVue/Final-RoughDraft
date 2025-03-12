@@ -1,0 +1,78 @@
+[
+    {
+        "prompt": "Take a Picture of the Ethnic Student Center",
+        "Group": "VU"
+    },
+    {
+        "prompt": "Take a Picture downstairs in the bookstore",
+        "Group": "VU"
+    },
+    {
+        "prompt": "Take a Picture of the For Handel",
+        "Group": "VU"
+    },
+    {
+        "prompt": "Take a Picture of the VU Cafe",
+        "Group": "VU"
+    },
+    {
+        "prompt": "Take a Picture of any piece of art in the building",
+        "Group": "VU"
+    },
+    {
+        "prompt": "Take a Picture of the bus stop",
+        "Group": "VU"
+    },
+
+
+    {
+        "prompt": "Take a Picture of the Square Sculpture",
+        "Group": "Red Square"
+    },
+    {
+        "prompt": "Take a Picture  of the Fountain",
+        "Group": "Red Square"
+    },
+    {
+        "prompt": "Take a Picture of yourself at one of the tables",
+        "Group": "Red Square"
+    },
+    {
+        "prompt": "Take a Picture in front of Bond Hall",
+        "Group": "Red Square"
+    },
+    {
+        "prompt": "Take a Picture in front of Miller Hall",
+        "Group": "Red Square"
+    },
+    {
+        "prompt": "Take a Picture of a poster on one of the buildings",
+        "Group": "Red Square"
+    },
+
+
+    {
+        "prompt": "Take a Picture of the IS Building Sign",
+        "Group": "Classroom"
+    },
+    {
+        "prompt": "Take a Picture of a Chair",
+        "Group": "Classroom"
+    },
+    {
+        "prompt": "Take a Picture of Dustin",
+        "Group": "Classroom"
+    },
+    {
+        "prompt": "Take a Picture in the Elevator of the IS Building",
+        "Group": "Classroom"
+    },
+    {
+        "prompt": "Take a Picture at the top of the stairs of the IS Building",
+        "Group": "Classroom"
+    },
+    {
+        "prompt": "Take a Picture of the Football Field from the IS Building",
+        "Group": "Classroom"
+    }
+]

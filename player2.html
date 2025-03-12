@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WWU Imposter | In-Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body onload="tester()">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col" id="discuss2">
+                <div id="holder">
+                    <h1>
+                        You are an Imposter. The prompts will not be visible to you and your goal is to prevent yourself from getting accused of being an imposter, and deceive everyone. Good Luck!
+                    </h1>
+                    <button id="innocentClose" onclick="hideImposter()">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div id="hider">
+                <div id="prompt1">
+                </div>
+            </div>
+            <div id="imposterPlaceholder1">
+                <h2>
+                    Photo 1
+                </h2>
+            </div>
+            <div id="questionbox">
+                <div id="firstOne">
+                    <p>
+                        <img src="" class="img-fluid img-thumbnail" id="img" alt="Photo1">
+                    </p>
+                    <form action="#" id="myform" enctype="multipart/form-data">
+                        <input type="file" id="capture" accept="image/*" capture />
+                        <label id="capturelabel" for="capture">Click "Choose File" To Take A Photo</label>
+                        <br>
+                    </form>    
+                </div>
+            </div>
+            <div id="hider2">
+                <div id="prompt2">
+                </div>
+            </div>
+            <div id="imposterPlaceholder2">
+                <h2>
+                    Photo 2
+                </h2>
+            </div>
+            <div id="questionbox2">
+                <div id="secondOne">
+                    <p>
+                        <img src="" class="img-fluid img-thumbnail" id="img2" alt="Photo2">
+                    </p>
+                    <form action="#" id="myform2" enctype="multipart/form-data">
+                        <input type="file" id="capture2" accept="image/*" capture />
+                        <label id="capturelabel2" for="capture2">Click "Choose File" To Take A Photo</label>
+                        <br>
+                    </form>
+                </div>
+            </div>
+            <div id="hider3">
+                <div id="prompt3">
+                </div>
+            </div>
+            <div id="imposterPlaceholder3">
+                <h2>
+                    Photo 3
+                </h2>
+            </div>
+            <div id="questionbox3">  
+                <div id="thirdOne">
+                    <p>
+                        <img src="" class="img-fluid img-thumbnail" id="img3" alt="Photo3">
+                    </p>
+                    <form action="#" id="myform3" enctype="multipart/form-data">
+                        <input type="file" id="capture3" accept="image/*" capture />
+                        <label id="capturelabel3" for="capture3">Click "Choose File" To Take A Photo</label>
+                        <br>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button id="nextButton" onclick="next()" style="display: block;">
+                    Next
+                </button>
+                <button id="doneButton" onclick="sub()">
+                    Done
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        function sub(){
+                document.getElementById("questionbox").style.display = "block";
+                document.getElementById("questionbox2").style.display = "block";
+                document.getElementById("questionbox3").style.display = "block";
+                document.getElementById("prompt1").style.display = "block";
+                document.getElementById("prompt2").style.display = "block";
+                document.getElementById("prompt3").style.display = "block";
+                document.getElementById("capture").style.display = "none";
+                document.getElementById("capture2").style.display = "none";
+                document.getElementById("capture3").style.display = "none";
+                document.getElementById("capturelabel").style.display = "none";
+                document.getElementById("capturelabel2").style.display = "none";
+                document.getElementById("capturelabel3").style.display = "none";
+                document.getElementById('imposterPlaceholder1').style.display = "none";
+                document.getElementById('imposterPlaceholder2').style.display = "none";
+                document.getElementById('imposterPlaceholder3').style.display = "none";
+                document.getElementById('hider').style.display = "block";
+                document.getElementById('hider2').style.display = "block";
+                document.getElementById('hider3').style.display = "block";
+            }
+        document.addEventListener("DOMContentLoaded", (e)=>{
+            e.preventDefault();         
+            let form = document.getElementById('myform');
+            //get the captured media file
+            let input = document.getElementById('capture');
+            let input2 = document.getElementById('capture2');
+            let input3 = document.getElementById('capture3');
+
+
+            input.addEventListener('change', (ev)=>{
+                console.dir(input.files[0]);
+                if(input.files[0].type.indexOf("image/") > -1){
+                    let img = document.getElementById('img');
+                    img.src = window.URL.createObjectURL(input.files[0]);
+                }
+            })
+            input2.addEventListener('change', (ev)=>{
+                console.dir(input2.files[0]);
+                if(input2.files[0].type.indexOf("image/") > -1){
+                    let img2 = document.getElementById('img2');
+                    img2.src = window.URL.createObjectURL(input2.files[0]);
+                }
+            })
+
+            input3.addEventListener('change', (ev)=>{
+                console.dir(input3.files[0]);
+                if(input3.files[0].type.indexOf("image/") > -1){
+                    let img3 = document.getElementById('img3');
+                    img3.src = window.URL.createObjectURL(input3.files[0]);
+                }
+            })
+        });
+    </script>
+</body>
+</html>
